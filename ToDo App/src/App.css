@@ -5,38 +5,58 @@
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #f9fafb; /* color base gris muy claro */
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+header {
+  background-color: #000000; /* color base gris muy oscuro */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+/* Navegación horizontal básica */
+nav ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  align-items: center;
 }
 
-.card {
-  padding: 2em;
+/* Enlaces */
+nav a {
+  text-decoration: none;
+  color: #FEE4E4; /* gris oscuro */
+  font-weight: 500;
 }
 
-.read-the-docs {
-  color: #888;
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Botón “+” personalizado */
+.btn {
+  width: 32px;
+  height: 32px;
+  background-color: #3b82f6; /* azul Tailwind */
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.btn:hover {
+  background-color: #2563eb; /* azul más oscuro */
+}
+
+/* Ajustes para section de iconos */
+header section {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
 }
